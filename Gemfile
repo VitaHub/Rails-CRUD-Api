@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'faker',                '1.4.2'
 gem 'will_paginate', '~> 3.1.0'
 gem 'carrierwave'
+gem 'rails_12factor', group: :production
 
 gem 'rack-cors', :require => 'rack/cors'
 gem 'active_hash_relation', github: 'kollegorna/active_hash_relation'
