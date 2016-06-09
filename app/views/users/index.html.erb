@@ -1,0 +1,16 @@
+<h1>All users</h1>
+
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :keywords, params[:keywords], placeholder: "Поиск пользователей" %>
+  <%= text_field_tag :age, params[:age], placeholder: "возраст" %>
+  <%= text_field_tag :city, params[:city], placeholder: "город" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<%= will_paginate %>
+
+<ul class="users">
+	<%= render @users %>
+</ul>
+
+<%= will_paginate %>

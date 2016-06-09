@@ -1,0 +1,13 @@
+<style type="text/css">
+  img {
+    height: 50px;
+  }
+</style>
+
+
+<li>
+  <%= image_tag(user.avatar_url) if user.avatar? %>  
+  <%= link_to (user.first_name + ' ' + user.last_name), user %>
+  <%= user.city %>
+  <%= user.age %>
+</li>
